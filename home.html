@@ -22,7 +22,7 @@
 
         <title>Taishiro Mizutani</title>
     </head>
-    <body>
+    <body onscroll="add_animated()">
 
         <!-- <div class="container-fluid">
             <div class="mybanner">
@@ -65,7 +65,9 @@
                 </section>
 
                 <section id="project">
-                    <h1 class="myheading">Projects</h1>
+                    <div class = myheadingwrapper>
+                        <h1 class="myheading projectsheading">Projects</h1>
+                    </div>
                     <div class="mycontainer1">
                         <div class="mycarousel">
                             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -94,50 +96,55 @@
                 </section>
 
                 <section id="skills">
-                    <h1 class="myheading">Skills</h1>
+                    <h1 class="myheading skillsheading">Skills</h1>
+
+                    <div class="NLang">
                     <h3>Natural Languages</h3>
-                    <!-- https://www.flaticon.com/packs/international-flags-6 -->
-                    <div class="row">
-                        <div class="col-12 col-md-4 myskill">
-                            <div class="mybox1">
-                                <img src="images/japan.svg" class ="skillimg" alt="...">
+                        <div class="row">
+                            <div class="col-12 col-md-4 myskill">
+                                <div class="mybox1">
+                                    <img src="images/japan.svg" class ="skillimg" alt="...">
+                                </div>
+                                <p class="skilldisc">Native</p>
                             </div>
-                            <p class="skilldisc">Native</p>
-                        </div>
-                        <div class="col-12 col-md-4 myskill">
-                            <div class="mybox1">
-                                    <img src="images/united-states.svg" class ="skillimg" alt="...">
+                            <div class="col-12 col-md-4 myskill">
+                                <div class="mybox1">
+                                        <img src="images/united-states.svg" class ="skillimg" alt="...">
+                                </div>
+                                <p class="skilldisc">Fluent</p>
                             </div>
-                            <p class="skilldisc">Fluent</p>
-                        </div>
-                        <div class="col-12 col-md-4 myskill">
-                            <div class="mybox1">
-                                <img src="images/china.svg" class ="skillimg" alt="...">
+                            <div class="col-12 col-md-4 myskill">
+                                <div class="mybox1">
+                                    <img src="images/china.svg" class ="skillimg" alt="...">
+                                </div>
+                                <p class="skilldisc">Fluent</p>
                             </div>
-                            <p class="skilldisc">Fluent</p>
                         </div>
                     </div>
-                    <h3 class="myprogramming">Programming Languages</h3>
-                    <div class="row">
+
+                    <div class="PLang">
+                        <h3 class="myprogramming">Programming Languages</h3>
+                        <div class="row">
                             <div class="col-12 col-md-4 myskill">
                                 <div class="mybox2">
-                                    <img src="images/html-5.svg" class ="skillimg" alt="...">
+                                    <img src="images/html-5.svg" class="skillimg" alt="...">
                                 </div>
                                 <p class="skilldisc">Comfortable</p>
                             </div>
                             <div class="col-12 col-md-4 myskill">
                                 <div class="mybox2">
-                                    <img src="images/css-3.svg" class ="skillimg" alt="...">
+                                    <img src="images/css-3.svg" class="skillimg" alt="...">
                                 </div>
                                 <p class="skilldisc">Comfortable</p>
                             </div>
                             <div class="col-12 col-md-4 myskill">
                                 <div class="mybox2">
-                                    <img src="images/js.svg" class ="skillimg" alt="...">
+                                    <img src="images/js.svg" class="skillimg" alt="...">
                                 </div>
                                 <p class="skilldisc">Learning</p>
                             </div>
                         </div>
+                    </div>
                 </section>
 
             </main>           
