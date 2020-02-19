@@ -66,7 +66,19 @@ a {
     }
 }
 
+@keyframes fadeIn { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
+
 /* Nav Bar */
+.navbar {
+    animation: fadeIn ease 1s;
+}
 .navbar-light .navbar-brand {
     color: #BFA89B;
     text-decoration: none;
@@ -128,6 +140,7 @@ main {
     min-height: 100px;
     /* background-color: rgb(50, 50, 68); */
     margin: 0 0 0 auto;
+    animation: fadeIn ease 3.5s;
 }
 
 .hi {
