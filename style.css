@@ -346,6 +346,7 @@ img {
 .aboutimg {
     width: 90%;
     animation: slideFade ease 3s;
+    margin-bottom: 40px;
 }
 
 .aboutme {
@@ -354,7 +355,6 @@ img {
 }
 
 .whoru {
-    margin-top: 40px;
     margin-bottom: 40px;
     font-size: 2rem;
     animation: slideTop ease 3.5s;
@@ -378,6 +378,10 @@ img {
 
     .myaboutcontainer {
         min-height: 950px;
+    }
+
+    .aboutimg {
+        margin-bottom: 0px;
     }
 
     .whoru {
