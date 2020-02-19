@@ -28,10 +28,6 @@ a {
     font-weight: bold;
 }
 
-/* .mydisplay2 {
-    display:none;
-} */
-
 /* Welcome */
 .mybanner {
     width: 100%;
@@ -68,6 +64,12 @@ a {
 
 @keyframes fadeIn { 
     0% {opacity: 0;} 
+    100% {opacity: 1;} 
+}
+
+@keyframes fadeIn2 { 
+    0% {opacity: 0;} 
+    80% {opacity: 0.9;}
     100% {opacity: 1;} 
 }
 
@@ -120,12 +122,10 @@ a {
 
 main {
     min-height: 300px;
-    /* background-color: rgb(161, 10, 30); */
 }
 
 #home {
     width: 100%;
-    /* background-color: rgb(110, 7, 64); */
     height: 600px;
     display: flex;
     align-items: center;
@@ -134,9 +134,8 @@ main {
 
 .intro {
     min-height: 100px;
-    /* background-color: rgb(50, 50, 68); */
     margin: 0 0 0 auto;
-    animation: fadeIn ease 3.5s;
+    animation: fadeIn2 ease 3.5s;
 }
 
 .hi {
@@ -156,7 +155,6 @@ main {
 #project {
     height: 500px;
     width: 100%;
-    /* background-color: rgb(75, 41, 90); */
     padding-bottom: 50px;
 }
 
@@ -166,7 +164,6 @@ main {
 
 .mycontainer1 {
     height: 80%;
-    /* background-color: rgb(205, 180, 216); */
     padding: auto 0;
     display: flex;
     align-items: center;
@@ -184,16 +181,17 @@ main {
     width: 100%;
 }
 
-.skillsheading {
+.NLang {
     visibility: hidden;
 }
 
-/* .cards {
-    min-height: 300px;
-    display: flex;
-    background-color: blue;
-    justify-content: space-between;
-} */
+.PLang {
+    visibility: hidden;
+}
+
+.skillsheading {
+    visibility: hidden;
+}
 
 .row {
     margin: 0px;
@@ -201,7 +199,6 @@ main {
 
 .myskill {
     min-height: 150px;
-    /* background-color: rgb(11, 75, 19); */
     padding: 10px 15px;
     box-align: center;
     margin-bottom: 30px;
@@ -213,13 +210,11 @@ main {
 
 .mybox1 {
     height: 180px;
-    /* background-color: darkgoldenrod; */
 }
 
 .mybox2 {
     height: 180px;
     margin-bottom: 25px;
-    /* background-color: darkgoldenrod; */
 }
 
 img {
