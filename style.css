@@ -80,7 +80,7 @@ a {
 .navbar-light .navbar-nav .nav-link {
     color: #BFA89B;
     text-decoration: none;
-    margin: 10px 20px;
+    margin: 10px 25px;
 }
 
 .navbar-light .navbar-nav .nav-link:visited {
@@ -262,7 +262,7 @@ img {
 @media screen and (min-width:992px) {
 
     .navbar {
-        padding: 0 120px;
+        padding: 0 180px;
     }
 
     #home {
