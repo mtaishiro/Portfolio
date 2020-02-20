@@ -28,28 +28,32 @@ a {
     font-weight: bold;
 }
 
-/* Welcome */
-.mybanner {
+/* Loading */
+
+@keyframes fadeOut {
+    100% {opacity: 0; visibility: hidden;}
+}
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 1000px;
-    background-color: aqua;
+    height: 100%;
+    background-color: white;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.mybox {
-    margin: 0 auto;
+.loader > img {
+    height: 200px;
 }
 
-.mywelcome {
-    font-size: 14vw;
-    display: inline;
-}
-
-.mybannerbtn {
-    font-size: 2.1vw;
-    animation: flash 1.5s linear infinite;
-    color: #F0C9C2;
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes flash {
@@ -68,7 +72,8 @@ a {
 }
 
 @keyframes fadeIn2 { 
-    0% {opacity: 0;} 
+    0% {opacity: 0;}
+    15% {opacity: 0;} 
     80% {opacity: 0.9;}
     100% {opacity: 1;} 
 }
@@ -76,6 +81,7 @@ a {
 /* Nav Bar */
 .navbar {
     animation: fadeIn ease 1s;
+    z-index: 98;
 }
 .navbar-light .navbar-brand {
     color: #BFA89B;
@@ -135,7 +141,7 @@ main {
 .intro {
     min-height: 100px;
     margin: 0 0 0 auto;
-    animation: fadeIn2 ease 3.5s;
+    animation: fadeIn2 ease 5s;
 }
 
 .hi {

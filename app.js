@@ -26,3 +26,8 @@ function add_animated(){
         PLang.classList.add("myfadeIn");
     }
 }
+
+window.addEventListener("load", function(){
+    var loader = document.querySelector(".loader");
+    loader.className += " hidden";
+});
